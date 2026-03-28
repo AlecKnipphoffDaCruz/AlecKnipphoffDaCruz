@@ -118,11 +118,17 @@ goal: International remote positions
 
 ## `> roadmap --current`
 
-```
-Clean Architecture  ███████████████████░░  90%
-Cloud (AWS/GCP)     ████████░░░░░░░░░░░░░  40%
-AI Integration      ████░░░░░░░░░░░░░░░░░  20%
-```
+<div align="center">
+
+| Topic | Progress | Level |
+|:------|:---------|:-----:|
+| Clean Architecture | ![](https://geps.dev/progress/90?dangerColor=58a6ff&warningColor=58a6ff&successColor=58a6ff) | Advanced |
+| Spring Ecosystem | ![](https://geps.dev/progress/75?dangerColor=58a6ff&warningColor=58a6ff&successColor=58a6ff) | Advanced |
+| Cloud (AWS / GCP) | ![](https://geps.dev/progress/40?dangerColor=58a6ff&warningColor=58a6ff&successColor=58a6ff) | Intermediate |
+| DevOps & CI/CD | ![](https://geps.dev/progress/35?dangerColor=58a6ff&warningColor=58a6ff&successColor=58a6ff) | Intermediate |
+| AI Integration | ![](https://geps.dev/progress/20?dangerColor=58a6ff&warningColor=58a6ff&successColor=58a6ff) | Exploring |
+
+</div>
 
 <br/>
 

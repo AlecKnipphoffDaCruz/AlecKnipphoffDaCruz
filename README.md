@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:58a6ff&height=220&section=header&text=Alec%20Knipphoff%20da%20Cruz&fontSize=42&fontColor=e6edf3&fontAlignY=35&desc=Backend%20Developer%20%7C%20Java%20%26%20Spring%20Boot&descSize=18&descAlignY=55&descColor=8b949e&animation=fadeIn&v=3)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:58a6ff&height=220&section=header&text=Alec%20Knipphoff%20da%20Cruz&fontSize=42&fontColor=e6edf3&fontAlignY=35&desc=Backend%20Developer%20%7C%20Java%20%E2%80%A2%20Spring%20Boot&descSize=18&descAlignY=55&descColor=8b949e&animation=fadeIn&v=5)
 
 <div align="center">
 
@@ -183,4 +183,4 @@ goal: International remote positions
 
 </div>
 
-![footer](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:58a6ff&height=120&section=footer&v=3)
+![footer](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:58a6ff&height=120&section=footer&v=5)

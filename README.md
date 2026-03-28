@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:58a6ff&height=220&section=header&text=Alec%20Knipphoff%20da%20Cruz&fontSize=42&fontColor=e6edf3&fontAlignY=35&desc=Backend%20Developer%20%7C%20Java%20%26%20Spring%20Boot&descSize=18&descAlignY=55&descColor=8b949e&animation=fadeIn)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:58a6ff&height=220&section=header&text=Alec%20Knipphoff%20da%20Cruz&fontSize=42&fontColor=e6edf3&fontAlignY=35&desc=Backend%20Developer%20%7C%20Java%20%26%20Spring%20Boot&descSize=18&descAlignY=55&descColor=8b949e&animation=fadeIn&v=2)
 
 <div align="center">
 
@@ -130,13 +130,13 @@ AI Integration      ████░░░░░░░░░░░░░░░░
 
 <div align="center">
 
-![Stats](https://github-readme-stats.vercel.app/api?username=AlecKnipphoffDaCruz&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&ring_color=58a6ff)
+![Stats](https://github-readme-stats.vercel.app/api?username=AlecKnipphoffDaCruz&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&ring_color=58a6ff&v=2)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AlecKnipphoffDaCruz&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=6)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AlecKnipphoffDaCruz&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=6&v=2)
 
-![Streak](https://github-readme-streak-stats.herokuapp.com/?user=AlecKnipphoffDaCruz&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=30363d&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff)
+![Streak](https://streak-stats.demolab.com/?user=AlecKnipphoffDaCruz&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=30363d&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff)
 
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=AlecKnipphoffDaCruz&theme=github-compact&hide_border=true&bg_color=0d1117&color=58a6ff&line=58a6ff&point=c9d1d9&area=true&area_color=58a6ff)
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=AlecKnipphoffDaCruz&theme=github-compact&hide_border=true&bg_color=0d1117&color=58a6ff&line=58a6ff&point=c9d1d9&area=true&area_color=58a6ff&v=2)
 
 </div>
 
@@ -146,10 +146,10 @@ AI Integration      ████░░░░░░░░░░░░░░░░
 
 <div align="center">
 
-[![java-desing-patterns](https://github-readme-stats.vercel.app/api/pin/?username=AlecKnipphoffDaCruz&repo=java-desing-patterns&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9)](https://github.com/AlecKnipphoffDaCruz/java-desing-patterns)
-[![desafio-backend-jr](https://github-readme-stats.vercel.app/api/pin/?username=AlecKnipphoffDaCruz&repo=desafio-backend-jr&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9)](https://github.com/AlecKnipphoffDaCruz/desafio-backend-jr)
-[![python-machine-learning](https://github-readme-stats.vercel.app/api/pin/?username=AlecKnipphoffDaCruz&repo=python-machine-learning&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9)](https://github.com/AlecKnipphoffDaCruz/python-machine-learning)
-[![java-threads](https://github-readme-stats.vercel.app/api/pin/?username=AlecKnipphoffDaCruz&repo=java-threads&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9)](https://github.com/AlecKnipphoffDaCruz/java-threads)
+[![java-desing-patterns](https://github-readme-stats.vercel.app/api/pin/?username=AlecKnipphoffDaCruz&repo=java-desing-patterns&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&v=2)](https://github.com/AlecKnipphoffDaCruz/java-desing-patterns)
+[![desafio-backend-jr](https://github-readme-stats.vercel.app/api/pin/?username=AlecKnipphoffDaCruz&repo=desafio-backend-jr&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&v=2)](https://github.com/AlecKnipphoffDaCruz/desafio-backend-jr)
+[![python-machine-learning](https://github-readme-stats.vercel.app/api/pin/?username=AlecKnipphoffDaCruz&repo=python-machine-learning&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&v=2)](https://github.com/AlecKnipphoffDaCruz/python-machine-learning)
+[![java-threads](https://github-readme-stats.vercel.app/api/pin/?username=AlecKnipphoffDaCruz&repo=java-threads&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&v=2)](https://github.com/AlecKnipphoffDaCruz/java-threads)
 
 </div>
 
@@ -175,4 +175,4 @@ AI Integration      ████░░░░░░░░░░░░░░░░
 
 </div>
 
-![footer](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:58a6ff&height=120&section=footer)
+![footer](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:58a6ff&height=120&section=footer&v=2)

@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=600&lines=Arquiteturas+limpas+%26+APIs+bem+feitas;De+Santa+Cruz+do+Sul+para+o+mundo;Clean+code+%3E+clever+code)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=600&lines=Clean+architectures+%26+well-crafted+APIs;From+Santa+Cruz+do+Sul+to+the+world;Clean+code+%3E+clever+code)](https://git.io/typing-svg)
 
 </div>
 
@@ -124,7 +124,7 @@ goal: International remote positions
 |:------|:---------|:-----:|
 | Clean Architecture | ![](https://geps.dev/progress/90?dangerColor=58a6ff&warningColor=58a6ff&successColor=58a6ff) | Advanced |
 | Spring Ecosystem | ![](https://geps.dev/progress/75?dangerColor=58a6ff&warningColor=58a6ff&successColor=58a6ff) | Advanced |
-| Cloud (AWS / GCP) | ![](https://geps.dev/progress/40?dangerColor=58a6ff&warningColor=58a6ff&successColor=58a6ff) | Intermediate |
+| Cloud (AWS) | ![](https://geps.dev/progress/40?dangerColor=58a6ff&warningColor=58a6ff&successColor=58a6ff) | Intermediate |
 | DevOps & CI/CD | ![](https://geps.dev/progress/35?dangerColor=58a6ff&warningColor=58a6ff&successColor=58a6ff) | Intermediate |
 | AI Integration | ![](https://geps.dev/progress/20?dangerColor=58a6ff&warningColor=58a6ff&successColor=58a6ff) | Exploring |
 

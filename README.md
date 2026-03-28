@@ -154,7 +154,7 @@ goal: International remote positions
 
 | Project | Description | Stack |
 |:--------|:-----------|:-----:|
-| [**java-desing-patterns**](https://github.com/AlecKnipphoffDaCruz/java-desing-patterns) | Practical study of the most important design patterns | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) |
+| [**java-desing-patterns**](https://github.com/AlecKnipphoffDaCruz/java-desing-patterns) | Practical study of the most important design patterns | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white) |
 | [**desafio-backend-jr**](https://github.com/AlecKnipphoffDaCruz/desafio-backend-jr) | Backend junior challenge application | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white) |
 | [**python-machine-learning**](https://github.com/AlecKnipphoffDaCruz/python-machine-learning) | House price prediction with ML | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 | [**java-threads**](https://github.com/AlecKnipphoffDaCruz/java-threads) | Java concurrency exploration | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) |

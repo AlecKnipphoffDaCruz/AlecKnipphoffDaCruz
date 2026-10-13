@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 440" width="1120" height="440" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-label="kafka-wallet architecture: client calls wallet-api, which writes to PostgreSQL and an outbox relay publishes to the transfer.completed topic, consumed by notification-service (with a dead-letter topic) and fraud-service (which emits fraud.alert).">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#8b949e"/>
+    </marker>
+    <marker id="arrBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#58a6ff"/>
+    </marker>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="1119" height="439" rx="16" fill="url(#bg)" stroke="#30363d"/>
+
+  <text x="32" y="40" font-size="16" font-weight="600" fill="#e6edf3">kafka-wallet<tspan fill="#8b949e" font-weight="400"> · event flow</tspan></text>
+
+  <!-- Client -->
+  <rect x="28" y="116" width="92" height="44" rx="22" fill="#161b22" stroke="#8b949e"/>
+  <text x="74" y="143" font-size="13" fill="#e6edf3" text-anchor="middle">Client</text>
+
+  <!-- wallet-api group -->
+  <rect x="210" y="70" width="260" height="300" rx="14" fill="#58a6ff" fill-opacity="0.06" stroke="#58a6ff" stroke-opacity="0.55"/>
+  <text x="228" y="95" font-size="13" font-weight="600" fill="#79c0ff">wallet-api</text>
+
+  <rect x="228" y="112" width="224" height="52" rx="10" fill="#161b22" stroke="#388bfd"/>
+  <text x="340" y="134" font-size="12.5" font-weight="600" fill="#e6edf3" text-anchor="middle">REST API</text>
+  <text x="340" y="151" font-size="10" fill="#8b949e" text-anchor="middle">Idempotency-Key required</text>
+
+  <rect x="228" y="196" width="224" height="52" rx="10" fill="#161b22" stroke="#388bfd"/>
+  <text x="340" y="218" font-size="12.5" font-weight="600" fill="#e6edf3" text-anchor="middle">One DB transaction</text>
+  <text x="340" y="235" font-size="10" fill="#8b949e" text-anchor="middle">balances + ledger + outbox row</text>
+
+  <rect x="228" y="280" width="224" height="52" rx="10" fill="#161b22" stroke="#388bfd"/>
+  <text x="340" y="302" font-size="12.5" font-weight="600" fill="#e6edf3" text-anchor="middle">Outbox relay</text>
+  <text x="340" y="319" font-size="10" fill="#8b949e" text-anchor="middle">scheduled poller</text>
+
+  <line x1="340" y1="164" x2="340" y2="194" stroke="#58a6ff" stroke-width="1.6" marker-end="url(#arrBlue)"/>
+  <line x1="340" y1="248" x2="340" y2="278" stroke="#58a6ff" stroke-width="1.6" marker-end="url(#arrBlue)"/>
+
+  <!-- Client -> API -->
+  <line x1="120" y1="138" x2="226" y2="138" stroke="#8b949e" stroke-width="1.6" marker-end="url(#arr)"/>
+  <text x="173" y="128" font-size="9.5" fill="#8b949e" text-anchor="middle">POST /transfers</text>
+
+  <!-- PostgreSQL -->
+  <path d="M34 204 a40 8 0 0 1 80 0 v36 a40 8 0 0 1 -80 0 z" fill="#0f2d1a" stroke="#3fb950"/>
+  <ellipse cx="74" cy="204" rx="40" ry="8" fill="#14391f" stroke="#3fb950"/>
+  <text x="74" y="231" font-size="11" font-weight="600" fill="#aff5b4" text-anchor="middle">PostgreSQL</text>
+
+  <line x1="228" y1="222" x2="118" y2="222" stroke="#8b949e" stroke-width="1.6" marker-end="url(#arr)"/>
+  <text x="173" y="212" font-size="9.5" fill="#8b949e" text-anchor="middle">commit</text>
+
+  <path d="M74 249 V306 H226" fill="none" stroke="#8b949e" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arr)"/>
+  <text x="152" y="298" font-size="9.5" fill="#8b949e" text-anchor="middle">claim rows (SKIP LOCKED)</text>
+
+  <!-- Relay -> topic -->
+  <path d="M452 306 H490 V222 H528" fill="none" stroke="#8b949e" stroke-width="1.6" marker-end="url(#arr)"/>
+  <text x="471" y="298" font-size="9.5" fill="#8b949e" text-anchor="middle">publish</text>
+
+  <!-- Topic -->
+  <polygon points="546,190 674,190 690,222 674,254 546,254 530,222" fill="#3b2412" stroke="#f0883e"/>
+  <text x="610" y="218" font-size="12" font-weight="600" fill="#ffd8b5" text-anchor="middle">transfer.completed</text>
+  <text x="610" y="236" font-size="9" fill="#d29b6e" text-anchor="middle">3 partitions · key = account</text>
+
+  <!-- Topic -> consumers -->
+  <path d="M690 222 C725 222 725 114 758 114" fill="none" stroke="#8b949e" stroke-width="1.6" marker-end="url(#arr)"/>
+  <path d="M690 222 C725 222 725 330 758 330" fill="none" stroke="#8b949e" stroke-width="1.6" marker-end="url(#arr)"/>
+
+  <!-- notification-service -->
+  <rect x="760" y="82" width="180" height="64" rx="12" fill="#102a4c" stroke="#58a6ff"/>
+  <text x="850" y="106" font-size="12.5" font-weight="600" fill="#cae8ff" text-anchor="middle">notification-service</text>
+  <text x="850" y="123" font-size="10" fill="#8fb8e8" text-anchor="middle">idempotent consumer</text>
+  <text x="850" y="137" font-size="10" fill="#8fb8e8" text-anchor="middle">retry + backoff</text>
+
+  <!-- fraud-service -->
+  <rect x="760" y="298" width="180" height="64" rx="12" fill="#102a4c" stroke="#58a6ff"/>
+  <text x="850" y="322" font-size="12.5" font-weight="600" fill="#cae8ff" text-anchor="middle">fraud-service</text>
+  <text x="850" y="339" font-size="10" fill="#8fb8e8" text-anchor="middle">Kafka Streams</text>
+  <text x="850" y="353" font-size="10" fill="#8fb8e8" text-anchor="middle">amount + windowed velocity</text>
+
+  <!-- Outputs -->
+  <line x1="940" y1="114" x2="998" y2="114" stroke="#8b949e" stroke-width="1.6" marker-end="url(#arr)"/>
+  <polygon points="1014,92 1086,92 1100,114 1086,136 1014,136 1000,114" fill="#3b2412" stroke="#f0883e"/>
+  <text x="1050" y="111" font-size="12" font-weight="600" fill="#ffd8b5" text-anchor="middle">DLQ</text>
+  <text x="1050" y="125" font-size="9" fill="#d29b6e" text-anchor="middle">after retries</text>
+
+  <line x1="940" y1="330" x2="998" y2="330" stroke="#8b949e" stroke-width="1.6" marker-end="url(#arr)"/>
+  <polygon points="1014,308 1086,308 1100,330 1086,352 1014,352 1000,330" fill="#3b2412" stroke="#f0883e"/>
+  <text x="1050" y="334" font-size="11.5" font-weight="600" fill="#ffd8b5" text-anchor="middle">fraud.alert</text>
+
+  <!-- Legend -->
+  <rect x="32" y="404" width="11" height="11" rx="3" fill="#102a4c" stroke="#58a6ff"/>
+  <text x="50" y="414" font-size="10.5" fill="#8b949e">Service</text>
+  <rect x="112" y="404" width="11" height="11" rx="3" fill="#3b2412" stroke="#f0883e"/>
+  <text x="130" y="414" font-size="10.5" fill="#8b949e">Kafka topic</text>
+  <rect x="214" y="404" width="11" height="11" rx="3" fill="#0f2d1a" stroke="#3fb950"/>
+  <text x="232" y="414" font-size="10.5" fill="#8b949e">Database</text>
+  <text x="1088" y="414" font-size="10.5" fill="#8b949e" text-anchor="end">at-least-once delivery · idempotent consumers</text>
+</svg>

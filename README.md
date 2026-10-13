@@ -1,88 +1,111 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:58a6ff&height=220&section=header&text=Alec%20Knipphoff%20da%20Cruz&fontSize=42&fontColor=e6edf3&fontAlignY=35&desc=Backend%20Developer%20%7C%20Java%20%E2%80%A2%20Spring%20Boot%20%E2%80%A2%20Kafka&descSize=18&descAlignY=55&descColor=8b949e&animation=fadeIn&v=5)
-
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=650&lines=Clean+architectures+%26+well-crafted+APIs;Event-driven+systems+with+Kafka;From+Santa+Cruz+do+Sul+to+the+world;Clean+code+%3E+clever+code)](https://git.io/typing-svg)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:58a6ff&height=200&section=header&text=Alec%20Knipphoff%20da%20Cruz&fontSize=40&fontColor=e6edf3&fontAlignY=36&desc=Backend%20Developer%20%C2%B7%20Java%20%C2%B7%20Spring%20Boot%20%C2%B7%20Kafka&descSize=18&descAlignY=58&descColor=8b949e&animation=fadeIn)
+
+![Open to work](https://img.shields.io/badge/OPEN%20TO%20WORK-Java%20Backend%20(Jr%20%2F%20Mid)-2ea043?style=for-the-badge)
+![Remote](https://img.shields.io/badge/Remote-preferred-1f6feb?style=for-the-badge)
+![Location](https://img.shields.io/badge/Santa%20Cruz%20do%20Sul-Brazil-30363d?style=for-the-badge)
+
+**Computer Science student at UNISC** · Portuguese (native) · English (upper-intermediate)
+
+[LinkedIn](https://linkedin.com/in/alec-knipphoff-da-cruz-155358314) · [Email](mailto:alecknipcruz@gmail.com)
 
 </div>
 
-<br/>
+---
 
-## `> whoami`
+### 👋 About
 
-```yaml
-name: Alec Knipphoff da Cruz
-role: Technology Apprentice @ KTO
-education: Computer Science @ UNISC
-location: Santa Cruz do Sul, RS - Brazil
-languages: Portuguese (native) · English (upper-intermediate)
-focus: Backend development, authentication & event-driven systems
-status: Open to Java Developer opportunities (remote)
-```
+I build backend systems where correctness matters: authentication, onboarding/KYC and event-driven services. At KTO, an iGaming platform, I worked on exactly that. On my own time I build projects that stress the hard parts of distributed systems (duplicate delivery, partial failure, ordering) and write down the trade-offs I made.
 
-<br/>
+---
 
-## `> currently`
+### ⭐ Featured project: [kafka-wallet](https://github.com/AlecKnipphoffDaCruz/kafka-wallet)
 
-- 🔨 **Building:** an event-driven wallet & ledger with Kafka, PostgreSQL and the Outbox Pattern
-- 📚 **Studying:** AWS (Cloud Practitioner → Associate), Spring Security and system design
-- 💼 **At work:** authentication and onboarding services with Spring Boot, Keycloak and Kafka, using hexagonal architecture
+An event-driven money transfer system built to practise the problems that make Kafka hard. The business rule is deliberately trivial (move money between two accounts); the plumbing around it is the point.
 
-<br/>
+<p align="center">
+  <img src="assets/kafka-wallet-architecture.svg" alt="kafka-wallet architecture: client, wallet-api with transactional outbox, transfer.completed topic, notification-service with DLQ, and fraud-service with fraud.alert" width="100%">
+</p>
 
-## `> tech --stack`
+| | |
+| --- | --- |
+| 📤 **Transactional outbox** | The event is published if and only if the money moved. The relay claims rows with `SELECT … FOR UPDATE SKIP LOCKED`, so it scales horizontally. |
+| 🔁 **Idempotency at both ends** | A mandatory `Idempotency-Key` on the API, and consumers that deduplicate by `eventId`. |
+| 🛡️ **Failure handling** | Optimistic locking with jittered retries, consumer retries with exponential backoff, then a dead-letter topic. Kafka Streams fraud rules (amount threshold and windowed velocity). |
+| 🧪 **Real infrastructure in tests** | Testcontainers integration tests, including 50 concurrent transfers that must leave the ledger balanced. |
+| 📈 **Observable** | Prometheus and Grafana, with outbox backlog and consumer lag as the key panels. |
+| 📝 **Trade-offs written down** | Every design decision and known limitation (poller vs CDC, no auth, single broker) is documented in the repo. |
+
+![Java](https://img.shields.io/badge/Java%2021-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![Kafka](https://img.shields.io/badge/Apache%20Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Testcontainers](https://img.shields.io/badge/Testcontainers-9B1C8C?style=flat-square)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
+
+---
+
+### 📦 More projects
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h4><a href="https://github.com/AlecKnipphoffDaCruz/-hexagonal-structure-practice">hexagonal-structure-practice</a></h4>
+      Ports &amp; Adapters reference implementation with Spring Boot and Java 25, with the rules for what may and may not cross each boundary.
+    </td>
+    <td width="50%" valign="top">
+      <h4><a href="https://github.com/AlecKnipphoffDaCruz/java-desing-patterns">java-desing-patterns</a></h4>
+      Factory, Singleton, Builder, Strategy, Observer and Decorator, each with a backend-flavoured example.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4><a href="https://github.com/AlecKnipphoffDaCruz/aws-clf-02">aws-clf-02</a></h4>
+      Bilingual (PT/EN) study guide for AWS Cloud Practitioner (CLF-C02): 27 sections, comparison tables, diagrams and exam-trap callouts.
+    </td>
+    <td width="50%" valign="top">
+      <h4><a href="https://github.com/AlecKnipphoffDaCruz/leetcode">leetcode</a></h4>
+      LeetCode solutions in Java.
+    </td>
+  </tr>
+</table>
+
+---
+
+### 🛠️ Tech
+
+<p>
+  <img src="https://skillicons.dev/icons?i=java,spring,postgres,kafka,docker,aws,react,tailwind,js,python,git" alt="Tech stack icons">
+</p>
+
+**Also:** Keycloak · OAuth2 / JWT · REST APIs · Flyway · Testcontainers · Kafka Streams · Prometheus + Grafana · Hexagonal architecture · Design patterns
+
+---
+
+### 🎯 Currently
+
+- 📚 Studying for **AWS Certified Cloud Practitioner (CLF-C02)**, then Solutions Architect Associate
+- 📚 Spring Security and system design
+- 🗣️ Practising technical interviews in English
+- 🔨 Polishing my repositories and documenting the decisions behind them
+
+### 💼 Experience
+
+**Technology Apprentice, KTO** (iGaming platform), until Oct 2026
+Authentication and onboarding services with Spring Boot, Keycloak and Kafka, using hexagonal architecture.
+
+---
 
 <div align="center">
 
-**Backend & Data**
-
-<img src="https://skillicons.dev/icons?i=java,spring,postgres,kafka,docker,aws" />
-
-**Frontend & Scripting**
-
-<img src="https://skillicons.dev/icons?i=react,tailwind,js,python,git" />
-
-<sub>Also: Keycloak · OAuth2 / JWT · REST APIs · Hexagonal Architecture · Design Patterns</sub>
-
-</div>
-
-<br/>
-
-## `> projects --featured`
-
-<div align="center">
-
-| Project | Description | Stack |
-|:--------|:-----------|:-----:|
-| **kafka-wallet** *(in progress)* | Event-driven wallet & ledger: Outbox Pattern, idempotent consumers, retry + DLQ, Testcontainers | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white) ![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) |
-| [**java-desing-patterns**](https://github.com/AlecKnipphoffDaCruz/java-desing-patterns) | Practical study of the most important design patterns | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white) |
-| [**java-threads**](https://github.com/AlecKnipphoffDaCruz/java-threads) | Java concurrency exploration | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) |
-| [**desafio-backend-jr**](https://github.com/AlecKnipphoffDaCruz/desafio-backend-jr) | Backend junior challenge application | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white) |
-
-</div>
-
-<br/>
-
-## `> stats --github`
-
-<div align="center">
-
-![Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=AlecKnipphoffDaCruz&theme=github_dark)
-![Top Langs](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=AlecKnipphoffDaCruz&theme=github_dark)
-
-</div>
-
-<br/>
-
-## `> contact --reach-me`
-
-<div align="center">
+### 📫 Let's talk
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/alec-knipphoff-da-cruz-155358314)
-[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:alecknipcruz@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AlecKnipphoffDaCruz)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/alec_knip/)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:alecknipcruz@gmail.com)
+
+![footer](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:58a6ff&height=120&section=footer)
 
 </div>
-
-![footer](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:58a6ff&height=120&section=footer&v=5)

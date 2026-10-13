@@ -6,7 +6,7 @@
 ![Remote](https://img.shields.io/badge/Remote-preferred-1f6feb?style=for-the-badge)
 ![Location](https://img.shields.io/badge/Santa%20Cruz%20do%20Sul-Brazil-30363d?style=for-the-badge)
 
-**Computer Science student at UNISC** · Portuguese (native) · English (upper-intermediate)
+**Computer Science student at UNISC** · Portuguese (native) · English (C1)
 
 [LinkedIn](https://linkedin.com/in/alec-knipphoff-da-cruz-155358314) · [Email](mailto:alecknipcruz@gmail.com)
 
@@ -17,6 +17,19 @@
 ### 👋 About
 
 I build backend systems where correctness matters: authentication, onboarding/KYC and event-driven services. At KTO, an iGaming platform, I worked on exactly that. On my own time I build projects that stress the hard parts of distributed systems (duplicate delivery, partial failure, ordering) and write down the trade-offs I made.
+
+---
+
+### 🔎 What I'm looking for
+
+| | |
+| --- | --- |
+| **Role** | Java Backend Developer, junior or mid-level |
+| **Stack** | Java, Spring Boot, PostgreSQL, Kafka, and AWS. I'd especially like a role that takes me deeper into cloud (AWS) |
+| **Problems I enjoy** | Authentication and identity, fintech and payments, event-driven systems, reliability and clean architecture |
+| **Setup** | Remote preferred. Open to Brazilian and international companies |
+
+If your team fits, [send me a message](mailto:alecknipcruz@gmail.com) or reach out on [LinkedIn](https://linkedin.com/in/alec-knipphoff-da-cruz-155358314).
 
 ---
 

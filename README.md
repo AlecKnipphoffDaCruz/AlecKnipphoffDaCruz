@@ -120,7 +120,7 @@ Authentication and onboarding services with Spring Boot, Keycloak and Kafka, usi
 
 ### 🏅 Certifications
 
-![AWS Certified Cloud Practitioner](https://img.shields.io/badge/AWS%20Certified-Cloud%20Practitioner%20(CLF--C02)-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white)
+[![AWS Certified Cloud Practitioner](https://img.shields.io/badge/AWS%20Certified-Cloud%20Practitioner%20(CLF--C02)-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white)](https://www.credly.com/badges/9b061965-2367-4dc6-8f25-9765645aa883)
 
 ---
 

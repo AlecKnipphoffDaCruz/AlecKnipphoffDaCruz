@@ -66,23 +66,30 @@ An event-driven money transfer system built to practise the problems that make K
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h4><a href="https://github.com/AlecKnipphoffDaCruz/-hexagonal-structure-practice">hexagonal-structure-practice</a></h4>
-      Ports &amp; Adapters reference implementation with Spring Boot and Java 25, with the rules for what may and may not cross each boundary.
+      <h4><a href="https://github.com/AlecKnipphoffDaCruz/platform-gitops">platform-gitops</a></h4>
+      Kubernetes and GitOps lab: a local k3d cluster managed by Argo CD (App of Apps), with two apps in separate repos whose GitHub Actions pipelines build multi-arch images and promote them via Git. A push becomes a deploy with no manual <code>kubectl</code>.
     </td>
     <td width="50%" valign="top">
-      <h4><a href="https://github.com/AlecKnipphoffDaCruz/java-desing-patterns">java-desing-patterns</a></h4>
-      Factory, Singleton, Builder, Strategy, Observer and Decorator, each with a backend-flavoured example.
+      <h4><a href="https://github.com/AlecKnipphoffDaCruz/-hexagonal-structure-practice">hexagonal-structure-practice</a></h4>
+      Ports &amp; Adapters reference implementation with Spring Boot and Java 25, with the rules for what may and may not cross each boundary.
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h4><a href="https://github.com/AlecKnipphoffDaCruz/aws-clf-02">aws-clf-02</a></h4>
-      Bilingual (PT/EN) study guide for AWS Cloud Practitioner (CLF-C02): 27 sections, comparison tables, diagrams and exam-trap callouts.
+      <h4><a href="https://github.com/AlecKnipphoffDaCruz/java-desing-patterns">java-desing-patterns</a></h4>
+      Factory, Singleton, Builder, Strategy, Observer and Decorator, each with a backend-flavoured example.
     </td>
+    <td width="50%" valign="top">
+      <h4><a href="https://github.com/AlecKnipphoffDaCruz/aws-clf-02">aws-clf-02</a></h4>
+      Bilingual (PT/EN) study guide for AWS Cloud Practitioner (CLF-C02): 27 sections, comparison tables, diagrams and exam-trap callouts. Written while preparing for the exam, which I passed.
+    </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h4><a href="https://github.com/AlecKnipphoffDaCruz/leetcode">leetcode</a></h4>
       LeetCode solutions in Java.
     </td>
+    <td width="50%" valign="top"></td>
   </tr>
 </table>
 
@@ -91,16 +98,17 @@ An event-driven money transfer system built to practise the problems that make K
 ### 🛠️ Tech
 
 <p>
-  <img src="https://skillicons.dev/icons?i=java,spring,postgres,kafka,docker,aws,react,tailwind,js,python,git" alt="Tech stack icons">
+  <img src="https://skillicons.dev/icons?i=java,spring,postgres,kafka,docker,kubernetes,aws,githubactions,react,tailwind,js,python,git" alt="Tech stack icons">
 </p>
 
-**Also:** Keycloak · OAuth2 / JWT · REST APIs · Flyway · Testcontainers · Kafka Streams · Prometheus + Grafana · Hexagonal architecture · Design patterns
+**Also:** Keycloak · OAuth2 / JWT · REST APIs · Flyway · Testcontainers · Kafka Streams · Prometheus + Grafana · Argo CD / GitOps · Kustomize · Hexagonal architecture · Design patterns
 
 ---
 
 ### 🎯 Currently
 
-- 📚 Studying for **AWS Certified Cloud Practitioner (CLF-C02)**, then Solutions Architect Associate
+- 📚 Studying for **AWS Certified Solutions Architect – Associate**
+- ☸️ Practising Kubernetes and GitOps with Argo CD in [platform-gitops](https://github.com/AlecKnipphoffDaCruz/platform-gitops)
 - 📚 Spring Security and system design
 - 🗣️ Practising technical interviews in English
 - 🔨 Polishing my repositories and documenting the decisions behind them
@@ -109,6 +117,10 @@ An event-driven money transfer system built to practise the problems that make K
 
 **Technology Apprentice, KTO** (iGaming platform), until Oct 2026
 Authentication and onboarding services with Spring Boot, Keycloak and Kafka, using hexagonal architecture.
+
+### 🏅 Certifications
+
+![AWS Certified Cloud Practitioner](https://img.shields.io/badge/AWS%20Certified-Cloud%20Practitioner%20(CLF--C02)-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white)
 
 ---
 
